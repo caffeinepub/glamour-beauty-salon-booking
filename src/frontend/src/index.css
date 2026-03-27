@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/assets/fonts/DMSans.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.25rem;
+
+    /* Ivory background #F7F2EE */
+    --background: 0.965 0.012 70;
+    /* Near-black #1F1F1F */
+    --foreground: 0.15 0.005 50;
+
+    /* Card: warm white */
+    --card: 0.98 0.006 70;
+    --card-foreground: 0.15 0.005 50;
+
+    --popover: 0.98 0.006 70;
+    --popover-foreground: 0.15 0.005 50;
+
+    /* Primary: muted gold #B89B6B */
+    --primary: 0.67 0.075 70;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary: blush beige #E7D2C8 */
+    --secondary: 0.875 0.038 40;
+    --secondary-foreground: 0.15 0.005 50;
+
+    --muted: 0.92 0.015 60;
+    --muted-foreground: 0.46 0.02 50;
+
+    /* Accent: dusty rose #A87E73 */
+    --accent: 0.59 0.068 30;
+    --accent-foreground: 1 0 0;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    /* Divider #D9D2CD */
+    --border: 0.845 0.012 55;
+    --input: 0.845 0.012 55;
+    --ring: 0.67 0.075 70;
+
+    /* Blush section #E7D2C8 */
+    --blush: 0.875 0.038 40;
+    /* Gold #B89B6B */
+    --gold: 0.67 0.075 70;
+    /* Dusty rose #A87E73 */
+    --rose: 0.59 0.068 30;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.15 0.005 50;
+    --sidebar-foreground: 0.965 0.012 70;
+    --sidebar-primary: 0.67 0.075 70;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.22 0.01 50;
+    --sidebar-accent-foreground: 0.965 0.012 70;
+    --sidebar-border: 0.25 0.01 50;
+    --sidebar-ring: 0.67 0.075 70;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DMSans", system-ui, sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "PlayfairDisplay", Georgia, serif;
+  }
+}
